@@ -7,7 +7,7 @@ module Api
       def new
         @thumbnail = ::LinkThumbnailer.generate(params[:url], options)
 
-        respond_with @thumbnail
+        respond_with @thumbnail, callback: params['callback']
       end
 
       private

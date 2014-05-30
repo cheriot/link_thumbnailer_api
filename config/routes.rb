@@ -1,7 +1,10 @@
 require 'api_constraints'
 
 Rails.application.routes.draw do
-  # root 'welcome#index'
+  use_doorkeeper
+  devise_for :users
+
+  root 'home#index'
 
   namespace :api, defaults: { format: 'json' } do
 

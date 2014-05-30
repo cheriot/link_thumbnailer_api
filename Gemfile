@@ -17,5 +17,12 @@ gem 'jquery-rails'
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
-gem 'sqlite3'
+gem 'pg'
 gem 'link_thumbnailer'
+gem 'devise'
+gem 'doorkeeper'
+gem 'slim'
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0.beta'
+end
