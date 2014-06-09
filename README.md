@@ -46,4 +46,19 @@ Example:
 	{"url":"http://stackoverflow.com","title":"Stack Overflow","description":"Q\u0026A for professional and enthusiast programmers","images":[{"src":"http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon@2.png?v=fde65a5a78c6","size":[316,316],"type":"png"}]}
 ```
 
+### JSONP
+
+LinkThumbnailer API handle `JSONP` calls as well. Example using jQuery:
+
+```
+$.ajax({
+  type:     'GET',
+  url:      'http://link-thumbnailer-api.herokuapp.com/api/thumbnails/new',
+  dataType: 'JSONP',
+  data: {
+    url: "http://stackoverflow.com"
+  }
+})
+```
+
 Visit [LinkThumbnailer github page](https://github.com/gottfrois/link_thumbnailer) for more information about LinkThumbnailer.
