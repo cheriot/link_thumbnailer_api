@@ -19,8 +19,6 @@ gem 'spring',        group: :development
 
 gem 'pg'
 gem 'link_thumbnailer'
-gem 'devise'
-gem 'doorkeeper'
 gem 'slim'
 
 group :development, :test do
