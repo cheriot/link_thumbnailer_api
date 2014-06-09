@@ -66,6 +66,10 @@ GEM
     newrelic_rpm (3.8.1.221)
     nokogiri (1.6.2.1)
       mini_portile (= 0.6.0)
+    oboe (2.6.5.5)
+      json
+    oboe-heroku (0.9.13.3)
+      oboe (>= 2.6.5.5)
     pg (0.17.1)
     polyglot (0.3.4)
     rack (1.5.2)
@@ -143,6 +147,7 @@ DEPENDENCIES
   jquery-rails
   link_thumbnailer
   newrelic_rpm
+  oboe-heroku
   pg
   rails (= 4.1.1)
   rspec-rails (~> 3.0.0.beta)

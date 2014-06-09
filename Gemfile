@@ -21,6 +21,7 @@ gem 'pg'
 gem 'link_thumbnailer'
 gem 'slim'
 gem 'newrelic_rpm'
+gem 'oboe-heroku'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
