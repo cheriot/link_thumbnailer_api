@@ -24,11 +24,12 @@ class OptionsParser
   end
 
   def parse_other_options
-    options[:attributes] = params[:attributes] if params[:attributes]
+    options[:attributes]  = params[:attributes]  if params[:attributes]
+    options[:image_stats] = params[:image_stats] unless params[:image_stats].nil?
   end
 
   def integers_options
-    %w(image_limit redirect_limit description_min_length image_stats).map(&:to_sym)
+    %w(image_limit redirect_limit description_min_length).map(&:to_sym)
   end
 
 end
