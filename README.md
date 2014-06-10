@@ -4,6 +4,8 @@
 
 Demo Application is [here](http://link-thumbnailer-demo.herokuapp.com/) !
 
+Checkout the [API status page](http://linkthumbnailer.status.io/) to see if everything is ok.
+
 ## Features
 
 - Dead simple.
