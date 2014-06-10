@@ -28,7 +28,7 @@ class OptionsParser
   end
 
   def integers_options
-    %w(image_limit redirect_limit description_min_length).map(&:to_sym)
+    %w(image_limit redirect_limit description_min_length image_stats).map(&:to_sym)
   end
 
 end
