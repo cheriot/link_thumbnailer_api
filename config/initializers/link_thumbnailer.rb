@@ -2,7 +2,7 @@
 LinkThumbnailer.configure do |config|
   # Numbers of redirects before raising an exception when trying to parse given url.
   #
-  config.redirect_limit = 4
+  # config.redirect_limit = 3
 
   # Set user agent
   #
@@ -31,7 +31,7 @@ LinkThumbnailer.configure do |config|
 
   # List of attributes you want LinkThumbnailer to fetch on a website.
   #
-  # config.attributes = [:title, :images, :description]
+  # config.attributes = [:title, :images, :description, :videos]
 
   # List of procedures used to rate the website description. Add you custom class
   # here. Note that the order matter to compute the score. See wiki for more details
@@ -60,4 +60,10 @@ LinkThumbnailer.configure do |config|
   # Numbers of images to fetch. Fetching too many images will be slow.
   #
   config.image_limit = 4
+
+  # Whether you want LinkThumbnailer to return image size and type or not.
+  # Setting this value to false will increase performance since for each images, LinkThumbnailer
+  # does not have to fetch its size and type.
+  #
+  # config.image_stats = true
 end
