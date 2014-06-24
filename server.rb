@@ -13,10 +13,10 @@ class Application < Goliath::API
   use(
     Rack::Static,
     root: Goliath::Application.app_path('public'),
-    urls: ['/favicon.ico', '/stylesheets', '/javascripts', '/images']
+    urls: ['/favicon.ico']
   )
 
-  plugin Goliath::Plugin::Latency
+  # plugin Goliath::Plugin::Latency
 
   def recent_latency
     Goliath::Plugin::Latency.recent_latency
