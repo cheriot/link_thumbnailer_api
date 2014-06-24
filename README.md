@@ -20,7 +20,7 @@ Checkout the [API status page](http://linkthumbnailer.status.io/) to see if ever
 
 ## Usage
 
-`GET http://link-thumbnailer-api.herokuapp.com/api/thumbnails/new`
+`GET http://link-thumbnailer-api.herokuapp.com/thumbnails/new`
 
 Note: API endpoint might change in the futur, this is the **BETA** version.
 
@@ -44,7 +44,7 @@ The API endpoint will respond in `JSON` with the following attributes:
 Example:
 
 ```
-> curl http://link-thumbnailer-api.herokuapp.com/api/thumbnails/new\?url\=http://stackoverflow.com
+> curl http://link-thumbnailer-api.herokuapp.com/thumbnails/new\?url\=http://stackoverflow.com
 	{"url":"http://stackoverflow.com","title":"Stack Overflow","description":"Q\u0026A for professional and enthusiast programmers","images":[{"src":"http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon@2.png?v=fde65a5a78c6","size":[316,316],"type":"png"}]}
 ```
 
@@ -55,7 +55,7 @@ LinkThumbnailer API handle `JSONP` calls as well. Example using jQuery:
 ```
 $.ajax({
   type:     'GET',
-  url:      'http://link-thumbnailer-api.herokuapp.com/api/thumbnails/new',
+  url:      'http://link-thumbnailer-api.herokuapp.com/thumbnails/new',
   dataType: 'JSONP',
   data: {
     url: "http://stackoverflow.com"
