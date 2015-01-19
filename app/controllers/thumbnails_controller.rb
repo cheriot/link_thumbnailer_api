@@ -14,4 +14,9 @@ class ThumbnailsController < ApplicationController
     ::OptionsParser.new(params.fetch(:options, {})).call
   end
 
+  def permitted_params
+    params.require(:url)
+    params.permit(options: [])
+  end
+
 end
