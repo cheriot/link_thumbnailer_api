@@ -8,15 +8,15 @@ Checkout the [API status](http://linkthumbnailer.status.io/) page to see if ever
 
 ## Features
 
-Dead simple.
-Support [OpenGraph](http://ogp.me/) protocol.
-Find and sort images that best represent what the page is about.
-Find and rate description that best represent what the page is about.
-Allow for custom class to sort the website descriptions yourself.
-Support image urls blacklisting (advertisements).
-Works with and without Rails.
-Fully customizable.
-Fully tested.
+- Dead simple.
+- Support [OpenGraph](http://ogp.me/) protocol.
+- Find and sort images that best represent what the page is about.
+- Find and rate description that best represent what the page is about.
+- Allow for custom class to sort the website descriptions yourself.
+- Support image urls blacklisting (advertisements).
+- Works with and without Rails.
+- Fully customizable.
+- Fully tested.
 
 ## Usage
 
