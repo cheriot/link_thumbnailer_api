@@ -1,1 +1,0 @@
-HostedGraphite.protocol = HostedGraphite::UDP

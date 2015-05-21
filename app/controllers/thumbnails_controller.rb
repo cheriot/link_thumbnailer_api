@@ -3,11 +3,11 @@ require 'options_parser'
 class ThumbnailsController < ApplicationController
 
   def new
-    ::HostedGraphite.send_metric('thumbnails.new', 1)
-
     @thumbnail = ::LinkThumbnailer.generate(params[:url], options)
 
     render json: @thumbnail, callback: params[:callback]
+  rescue URI::InvalidURIError => e
+    render json: { error: e.message }, callback: params[:callback], status: 422
   end
 
   private
