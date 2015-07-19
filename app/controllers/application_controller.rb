@@ -3,9 +3,7 @@ class ApplicationController < ActionController::API
 
   respond_to :json
 
-  rescue_from ::LinkThumbnailer::Exceptions, with: :bad_request
   rescue_from ::ActionController::ParameterMissing, with: :bad_request
-  rescue_from ::Net::HTTPServerException, with: :forbidden
   rescue_from ::NameError, with: :bad_request
 
   def not_found
@@ -14,10 +12,6 @@ class ApplicationController < ActionController::API
 
   def bad_request
     head :bad_request
-  end
-
-  def forbidden
-    head :forbidden
   end
 
 end
