@@ -13,3 +13,5 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'pry'
 end
+
+ruby "2.0.0"
